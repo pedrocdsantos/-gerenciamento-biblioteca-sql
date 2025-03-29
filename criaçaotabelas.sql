@@ -30,12 +30,3 @@ CREATE TABLE emprestimos (
     status VARCHAR(50)
 );
 
-alter table livros 
-add constraint fk_livros_autores 
-foreign key (id_autor) references autores(id_autor);
-foreign key (id_categoria) references categoria(id_categoria);
-
-alter table emprestimos
-add constraint fk_emprestimos_livros
-foreign key (id_livro) references livros(id_livro);
-
