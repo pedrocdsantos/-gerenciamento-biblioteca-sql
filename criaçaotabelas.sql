@@ -1,3 +1,9 @@
+
+create table categoria (
+  id_categoria int primary key identity(1,1),
+  nome varchar(50) not null,
+  descricao text
+
 CREATE TABLE autores (
     id_autor INT PRIMARY KEY IDENTITY(1,1),
     nome VARCHAR(100),
@@ -5,7 +11,6 @@ CREATE TABLE autores (
     data_nascimento DATE,
     nacionalidade VARCHAR(50)
 );
-
 
 CREATE TABLE emprestimos (
     id_emprestimo INT PRIMARY KEY IDENTITY(1,1),
